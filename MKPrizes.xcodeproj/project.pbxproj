@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246D65C426742E8600DE508A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D65C326742E8600DE508A /* R.generated.swift */; };
+		246D65D72674E23D00DE508A /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D65D62674E23D00DE508A /* Extension+UIImage.swift */; };
+		246D65DD2674F68D00DE508A /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D65DC2674F68D00DE508A /* RealmManager.swift */; };
+		24841851267427D300E0B1A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24841850267427D300E0B1A7 /* AppDelegate.swift */; };
+		24841853267427D300E0B1A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24841852267427D300E0B1A7 /* SceneDelegate.swift */; };
+		24841855267427D300E0B1A7 /* PrizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24841854267427D300E0B1A7 /* PrizesViewController.swift */; };
+		24841858267427D300E0B1A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24841856267427D300E0B1A7 /* Main.storyboard */; };
+		2484185A267427D400E0B1A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24841859267427D400E0B1A7 /* Assets.xcassets */; };
+		2484185D267427D400E0B1A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2484185B267427D400E0B1A7 /* LaunchScreen.storyboard */; };
+		248418672674284D00E0B1A7 /* CreatePrizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248418662674284D00E0B1A7 /* CreatePrizeViewController.swift */; };
+		2484186A267428DB00E0B1A7 /* Prize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24841869267428DB00E0B1A7 /* Prize.swift */; };
+		2484186E2674296600E0B1A7 /* PrizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2484186C2674296600E0B1A7 /* PrizeTableViewCell.swift */; };
+		2484186F2674296600E0B1A7 /* PrizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484186D2674296600E0B1A7 /* PrizeTableViewCell.xib */; };
+		575702EC20B77B8E73CDAAE0 /* Pods_MKPrizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502BE7F91BD863EC0D0B4C4 /* Pods_MKPrizes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		246D65C326742E8600DE508A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		246D65D62674E23D00DE508A /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		246D65DC2674F68D00DE508A /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		2484184D267427D300E0B1A7 /* MKPrizes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKPrizes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24841850267427D300E0B1A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24841852267427D300E0B1A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24841854267427D300E0B1A7 /* PrizesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesViewController.swift; sourceTree = "<group>"; };
+		24841857267427D300E0B1A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24841859267427D400E0B1A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2484185C267427D400E0B1A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2484185E267427D400E0B1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248418662674284D00E0B1A7 /* CreatePrizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePrizeViewController.swift; sourceTree = "<group>"; };
+		24841869267428DB00E0B1A7 /* Prize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prize.swift; sourceTree = "<group>"; };
+		2484186C2674296600E0B1A7 /* PrizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeTableViewCell.swift; sourceTree = "<group>"; };
+		2484186D2674296600E0B1A7 /* PrizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrizeTableViewCell.xib; sourceTree = "<group>"; };
+		5502BE7F91BD863EC0D0B4C4 /* Pods_MKPrizes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKPrizes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8211B88DB7D9AB35E1D9D363 /* Pods-MKPrizes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKPrizes.debug.xcconfig"; path = "Target Support Files/Pods-MKPrizes/Pods-MKPrizes.debug.xcconfig"; sourceTree = "<group>"; };
+		E13729353D7047CE5E483A14 /* Pods-MKPrizes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKPrizes.release.xcconfig"; path = "Target Support Files/Pods-MKPrizes/Pods-MKPrizes.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2484184A267427D300E0B1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575702EC20B77B8E73CDAAE0 /* Pods_MKPrizes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246D65C72674300900DE508A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24841869267428DB00E0B1A7 /* Prize.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		246D65D92674E24600DE508A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				246D65D62674E23D00DE508A /* Extension+UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		246D65DF267558C900DE508A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				246D65DC2674F68D00DE508A /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		246D65E1267558E400DE508A /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				24841854267427D300E0B1A7 /* PrizesViewController.swift */,
+				248418662674284D00E0B1A7 /* CreatePrizeViewController.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		24841844267427D300E0B1A7 = {
+			isa = PBXGroup;
+			children = (
+				2484184F267427D300E0B1A7 /* MKPrizes */,
+				2484184E267427D300E0B1A7 /* Products */,
+				E2F3AEBD8212D5FEAF689C4A /* Pods */,
+				E642DD0FF95F14C4D67715E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2484184E267427D300E0B1A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2484184D267427D300E0B1A7 /* MKPrizes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2484184F267427D300E0B1A7 /* MKPrizes */ = {
+			isa = PBXGroup;
+			children = (
+				24841850267427D300E0B1A7 /* AppDelegate.swift */,
+				24841852267427D300E0B1A7 /* SceneDelegate.swift */,
+				246D65E1267558E400DE508A /* Flow */,
+				246D65DF267558C900DE508A /* Services */,
+				246D65C72674300900DE508A /* Model */,
+				248418712674296A00E0B1A7 /* PrizeTableViewCell */,
+				246D65D92674E24600DE508A /* Extensions */,
+				2484187C26742D9A00E0B1A7 /* SupportedFiles */,
+				24841856267427D300E0B1A7 /* Main.storyboard */,
+				24841859267427D400E0B1A7 /* Assets.xcassets */,
+				2484185B267427D400E0B1A7 /* LaunchScreen.storyboard */,
+				2484185E267427D400E0B1A7 /* Info.plist */,
+			);
+			path = MKPrizes;
+			sourceTree = "<group>";
+		};
+		248418712674296A00E0B1A7 /* PrizeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2484186C2674296600E0B1A7 /* PrizeTableViewCell.swift */,
+				2484186D2674296600E0B1A7 /* PrizeTableViewCell.xib */,
+			);
+			path = PrizeTableViewCell;
+			sourceTree = "<group>";
+		};
+		2484187C26742D9A00E0B1A7 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				246D65C326742E8600DE508A /* R.generated.swift */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		E2F3AEBD8212D5FEAF689C4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8211B88DB7D9AB35E1D9D363 /* Pods-MKPrizes.debug.xcconfig */,
+				E13729353D7047CE5E483A14 /* Pods-MKPrizes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E642DD0FF95F14C4D67715E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5502BE7F91BD863EC0D0B4C4 /* Pods_MKPrizes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2484184C267427D300E0B1A7 /* MKPrizes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24841861267427D400E0B1A7 /* Build configuration list for PBXNativeTarget "MKPrizes" */;
+			buildPhases = (
+				95A9505A23D27AFEEC79D27A /* [CP] Check Pods Manifest.lock */,
+				24841849267427D300E0B1A7 /* Sources */,
+				2484184A267427D300E0B1A7 /* Frameworks */,
+				2484184B267427D300E0B1A7 /* Resources */,
+				2484187926742B7000E0B1A7 /* Run Script Swift */,
+				14A1E84AC1DA2725D753DB5B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKPrizes;
+			productName = MKPrizes;
+			productReference = 2484184D267427D300E0B1A7 /* MKPrizes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24841845267427D300E0B1A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2484184C267427D300E0B1A7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 24841848267427D300E0B1A7 /* Build configuration list for PBXProject "MKPrizes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24841844267427D300E0B1A7;
+			productRefGroup = 2484184E267427D300E0B1A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2484184C267427D300E0B1A7 /* MKPrizes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2484184B267427D300E0B1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2484186F2674296600E0B1A7 /* PrizeTableViewCell.xib in Resources */,
+				2484185D267427D400E0B1A7 /* LaunchScreen.storyboard in Resources */,
+				2484185A267427D400E0B1A7 /* Assets.xcassets in Resources */,
+				24841858267427D300E0B1A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14A1E84AC1DA2725D753DB5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKPrizes/Pods-MKPrizes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKPrizes/Pods-MKPrizes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKPrizes/Pods-MKPrizes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2484187926742B7000E0B1A7 /* Run Script Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate --disable-input-output-files-validation \"$SRCROOT/MKPrizes/SupportedFiles/R.generated.swift\"\n";
+		};
+		95A9505A23D27AFEEC79D27A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKPrizes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24841849267427D300E0B1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2484186E2674296600E0B1A7 /* PrizeTableViewCell.swift in Sources */,
+				246D65C426742E8600DE508A /* R.generated.swift in Sources */,
+				24841855267427D300E0B1A7 /* PrizesViewController.swift in Sources */,
+				246D65D72674E23D00DE508A /* Extension+UIImage.swift in Sources */,
+				2484186A267428DB00E0B1A7 /* Prize.swift in Sources */,
+				246D65DD2674F68D00DE508A /* RealmManager.swift in Sources */,
+				24841851267427D300E0B1A7 /* AppDelegate.swift in Sources */,
+				24841853267427D300E0B1A7 /* SceneDelegate.swift in Sources */,
+				248418672674284D00E0B1A7 /* CreatePrizeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24841856267427D300E0B1A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24841857267427D300E0B1A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2484185B267427D400E0B1A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2484185C267427D400E0B1A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2484185F267427D400E0B1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24841860267427D400E0B1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24841862267427D400E0B1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8211B88DB7D9AB35E1D9D363 /* Pods-MKPrizes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MKPrizes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MK.MKPrizes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24841863267427D400E0B1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13729353D7047CE5E483A14 /* Pods-MKPrizes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MKPrizes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MK.MKPrizes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24841848267427D300E0B1A7 /* Build configuration list for PBXProject "MKPrizes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2484185F267427D400E0B1A7 /* Debug */,
+				24841860267427D400E0B1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24841861267427D400E0B1A7 /* Build configuration list for PBXNativeTarget "MKPrizes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24841862267427D400E0B1A7 /* Debug */,
+				24841863267427D400E0B1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24841845267427D300E0B1A7 /* Project object */;
+}

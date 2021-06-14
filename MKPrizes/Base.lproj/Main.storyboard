@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HJQ-ma-vMI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prizes View Controller-->
+        <scene sceneID="ZnH-MD-U0v">
+            <objects>
+                <viewController id="evg-dj-sNX" customClass="PrizesViewController" customModule="MKPrizes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buq-oS-7AT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucu-1p-GsH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JbG-F6-VpK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JbG-F6-VpK" firstAttribute="bottom" secondItem="ucu-1p-GsH" secondAttribute="bottom" id="Hlx-Cj-fS0"/>
+                            <constraint firstItem="JbG-F6-VpK" firstAttribute="trailing" secondItem="ucu-1p-GsH" secondAttribute="trailing" id="Muz-5D-mag"/>
+                            <constraint firstItem="ucu-1p-GsH" firstAttribute="top" secondItem="JbG-F6-VpK" secondAttribute="top" id="d4B-ld-sBF"/>
+                            <constraint firstItem="ucu-1p-GsH" firstAttribute="leading" secondItem="JbG-F6-VpK" secondAttribute="leading" id="p4Z-1O-Ub1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L3y-0s-6aX"/>
+                    <connections>
+                        <outlet property="prizesTableView" destination="ucu-1p-GsH" id="0zF-Zo-7fx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wea-hG-eyT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.13043478260875" y="88.392857142857139"/>
+        </scene>
+        <!--Create Prize View Controller-->
+        <scene sceneID="yWO-Ly-C3Y">
+            <objects>
+                <viewController storyboardIdentifier="CreatePrizeViewController" id="h23-bg-gaV" customClass="CreatePrizeViewController" customModule="MKPrizes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1g7-81-edq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ger-cR-Zdo">
+                                <rect key="frame" x="121" y="222.5" width="172" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <state key="normal" title="Create Prize"/>
+                                <connections>
+                                    <action selector="createPrizeAction" destination="h23-bg-gaV" eventType="touchUpInside" id="ejD-5T-pWj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prize name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsK-MC-mdD">
+                                <rect key="frame" x="20" y="74" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prize cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="265-FT-asW">
+                                <rect key="frame" x="20" y="135" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pDZ-mg-pFa">
+                                <rect key="frame" x="129" y="67.5" width="265" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-Qd-7RU">
+                                <rect key="frame" x="129" y="128.5" width="265" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JIJ-dt-ErN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ger-cR-Zdo" firstAttribute="centerX" secondItem="1g7-81-edq" secondAttribute="centerX" id="810-Ns-xaq"/>
+                            <constraint firstItem="pDZ-mg-pFa" firstAttribute="centerY" secondItem="ZsK-MC-mdD" secondAttribute="centerY" id="C4C-8s-hDw"/>
+                            <constraint firstItem="pDZ-mg-pFa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZsK-MC-mdD" secondAttribute="trailing" constant="20" id="CCK-s1-vcj"/>
+                            <constraint firstItem="JIJ-dt-ErN" firstAttribute="trailing" secondItem="pDZ-mg-pFa" secondAttribute="trailing" constant="20" id="FcC-ie-Ku7"/>
+                            <constraint firstItem="JIJ-dt-ErN" firstAttribute="trailing" secondItem="mmL-Qd-7RU" secondAttribute="trailing" constant="20" id="Ihg-lx-jBS"/>
+                            <constraint firstItem="ger-cR-Zdo" firstAttribute="top" secondItem="mmL-Qd-7RU" secondAttribute="bottom" constant="60" id="JV7-1m-S9g"/>
+                            <constraint firstItem="ZsK-MC-mdD" firstAttribute="top" secondItem="JIJ-dt-ErN" secondAttribute="top" constant="30" id="LbQ-Jq-4kZ"/>
+                            <constraint firstItem="265-FT-asW" firstAttribute="leading" secondItem="JIJ-dt-ErN" secondAttribute="leading" constant="20" id="TJ6-Dp-GiN"/>
+                            <constraint firstItem="mmL-Qd-7RU" firstAttribute="centerY" secondItem="265-FT-asW" secondAttribute="centerY" id="dPC-ER-Njw"/>
+                            <constraint firstItem="mmL-Qd-7RU" firstAttribute="width" secondItem="pDZ-mg-pFa" secondAttribute="width" id="fSB-NO-jdg"/>
+                            <constraint firstItem="265-FT-asW" firstAttribute="top" secondItem="ZsK-MC-mdD" secondAttribute="bottom" constant="40" id="ga6-lq-d6q"/>
+                            <constraint firstItem="ZsK-MC-mdD" firstAttribute="leading" secondItem="JIJ-dt-ErN" secondAttribute="leading" constant="20" id="pB2-f0-qzo"/>
+                            <constraint firstItem="mmL-Qd-7RU" firstAttribute="leading" secondItem="265-FT-asW" secondAttribute="trailing" constant="20" id="uBe-ce-vo0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createPrizeButton" destination="ger-cR-Zdo" id="Dbh-NI-TsG"/>
+                        <outlet property="prizeCostTextField" destination="mmL-Qd-7RU" id="zFr-4n-wCV"/>
+                        <outlet property="prizeNameTextField" destination="pDZ-mg-pFa" id="jJx-sJ-tvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iro-he-ybl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nWE-b9-bUt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HJQ-ma-vMI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YI9-zU-pyW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="evg-dj-sNX" kind="relationship" relationship="rootViewController" id="FUt-3K-CBl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLE-69-sHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

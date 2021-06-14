@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrizeTableViewCell" id="YmT-wN-bSX" customClass="PrizeTableViewCell" customModule="MKPrizes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YmT-wN-bSX" id="DFn-m6-TyJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-Ge-2lc">
+                        <rect key="frame" x="20" y="11.5" width="192" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10l-u2-iLy">
+                        <rect key="frame" x="286" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="10l-u2-iLy" secondAttribute="height" multiplier="1:1" id="5T7-GV-2qB"/>
+                            <constraint firstAttribute="height" constant="22" id="uaF-PY-P0i"/>
+                        </constraints>
+                        <state key="normal" image="square" catalog="system"/>
+                        <connections>
+                            <action selector="pickPrizeAction:" destination="YmT-wN-bSX" eventType="touchUpInside" id="W2z-uF-82D"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muT-if-kP3">
+                        <rect key="frame" x="224" y="11.5" width="50" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="UT3-0S-2ts"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="10l-u2-iLy" firstAttribute="leading" secondItem="muT-if-kP3" secondAttribute="trailing" constant="12" id="0V8-YM-oFn"/>
+                    <constraint firstItem="muT-if-kP3" firstAttribute="leading" secondItem="Ji3-Ge-2lc" secondAttribute="trailing" constant="12" id="4Jk-CL-mMY"/>
+                    <constraint firstItem="Ji3-Ge-2lc" firstAttribute="centerY" secondItem="DFn-m6-TyJ" secondAttribute="centerY" id="Cgb-LJ-b11"/>
+                    <constraint firstAttribute="trailing" secondItem="10l-u2-iLy" secondAttribute="trailing" constant="12" id="INw-gq-099"/>
+                    <constraint firstItem="muT-if-kP3" firstAttribute="centerY" secondItem="DFn-m6-TyJ" secondAttribute="centerY" id="Tae-Mn-Otz"/>
+                    <constraint firstItem="10l-u2-iLy" firstAttribute="centerY" secondItem="DFn-m6-TyJ" secondAttribute="centerY" id="gDG-cu-UQG"/>
+                    <constraint firstItem="Ji3-Ge-2lc" firstAttribute="leading" secondItem="DFn-m6-TyJ" secondAttribute="leading" constant="20" id="ud7-kh-gmy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0ev-R8-yXZ"/>
+            <connections>
+                <outlet property="pickButton" destination="10l-u2-iLy" id="SM2-1z-Nc2"/>
+                <outlet property="prizeCostLabel" destination="muT-if-kP3" id="7wh-Em-RLU"/>
+                <outlet property="prizeNameLabel" destination="Ji3-Ge-2lc" id="emh-q4-d2B"/>
+            </connections>
+            <point key="canvasLocation" x="-71.014492753623188" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
